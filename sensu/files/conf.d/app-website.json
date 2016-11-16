@@ -1,10 +1,9 @@
 {
   "checks": {
     "app-website": {
-      "command": "/usr/lib/nagios/plugins/check-http --string=Hello --hostname=localhost",
+      "command": "/usr/lib/nagios/plugins/check_http --string=Hello --hostname=localhost",
       "subscribers": [ "app" ],
       "interval": 3,
-      "occurrences": 5,
       "handler": "st2"
     }
   }
