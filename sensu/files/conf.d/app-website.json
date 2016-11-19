@@ -1,9 +1,10 @@
 {
   "checks": {
     "app-website": {
-      "command": "/usr/lib/nagios/plugins/check_http --string=reynholm-logo --hostname=localhost",
+      "command": "/usr/lib/nagios/plugins/check_http --string=This is --hostname=localhost",
       "subscribers": [ "app" ],
       "interval": 3,
+      "ttl": 6,
       "handler": "st2"
     }
   }
